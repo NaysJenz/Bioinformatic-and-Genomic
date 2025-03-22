@@ -242,4 +242,27 @@ checkbox.addEventListener("change", () => {
   document.body.classList.toggle("dark");
 });
 
+// Genome Explorer Script
+document.getElementById('gene-selector').addEventListener('change', function() {
+  const gene = this.value;
+  const visualization = document.getElementById('trait-visualization');
+  visualization.innerHTML = `<p>Loading traits for ${gene}...</p>`;
+  // Simulate an API call or data fetch
+  setTimeout(() => {
+    visualization.innerHTML = `<p>Traits associated with ${gene}: <strong>Cancer Risk, Heart Disease</strong></p>`;
+  }, 1000);
+});
+
+// Disease Risk Assessment Script
+document.getElementById('risk-assessment-form').addEventListener('submit', function(e) {
+  e.preventDefault();
+  const marker = document.getElementById('genetic-marker').value;
+  const result = document.getElementById('risk-result');
+  result.innerHTML = `<p>Assessing risk for marker: ${marker}...</p>`;
+  // Simulate an API call or data fetch
+  setTimeout(() => {
+    result.innerHTML = `<p>Risk assessment for ${marker}: <strong>Low Risk</strong></p>`;
+  }, 1000);
+});
+
 })();

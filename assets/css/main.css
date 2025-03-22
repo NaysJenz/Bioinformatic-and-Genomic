@@ -1808,12 +1808,18 @@ body.dark-mode .hero {
 body.dark-mode .services p {
   color: #f1eeee;
 }
+
+body.dark-mode .black{
+  color: black;
+}
 body.dark-mode .white {
   color: #f1eeee;
 }
 body.dark-mode .features p {
   color: #f1eeee;
 }
+body.dark-mode .genome-explorer,
+body.dark-mode .desease-risk,
 body.dark-mode .services-list,
 body.dark-mode .stats,
 body.dark-mode .clients,
@@ -2034,6 +2040,51 @@ body.dark-mode .footer .footer-newsletter .newsletter-form input[type=submit]:ho
 
 .checkbox:checked + .checkbox-label .ball {
   transform: translateX(24px);
+}
+
+/* Genome Explorer Styles */
+.genome-explorer-tool {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#trait-visualization {
+  height: 300px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+/* Disease Risk Assessment Styles */
+.risk-assessment-tool {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#risk-result {
+  height: 200px;
+  background: #746e6e;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.black {
+  color: black;
+}
+.cancer{
+  border-radius: 4px;
+  height: 450px;
+  width: 600px;
+}
+
+.gene {
+  height: 400px;
+  width: 600px;
+  border-radius: 5px;
 }
 /*--------------------------------------------------------------
 # Starter Section Section
